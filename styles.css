@@ -1,0 +1,89 @@
+
+body {
+    margin: 0;
+    background-color: #F0F6F6;
+}
+.top-bar {
+    background-color: #084B83;
+    display: flex;
+    height: 150px;
+    color: white;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+.etch {
+    font-family: Permanent Marker;
+    font-size: 50px;
+}
+
+.form-background {
+    display: grid;
+    grid-template-columns: 160px 160px 160px;
+    grid-gap: 10px;
+    background-color:#F0F6F6;
+    width: 500px;
+    margin: 50px auto -50px auto;
+}
+
+.range {
+    font-family: Permanent Marker;
+    grid-column-start:1;
+    grid-column-end: 2;
+    text-align: center;
+    margin: 13px 0 5px 0;
+}
+
+.new {
+    grid-column-start:2;
+    grid-column-end: 3;
+    text-align:center;
+    margin: 5px 0 5px 0;
+    
+}
+
+#new-btn {
+    background-color: #BBE6E4;
+    height: 80px;
+    width: 80px;
+    border: 1px solid #66b3af;
+    border-radius: 20px;
+    transition: background-color 0.2s ease-in;
+    font-family: Permanent Marker;
+    font-size: 20px;
+}
+
+#new-btn:hover {
+    background-color: #66b3af;
+}
+#new-btn:focus {
+    outline: 0px;
+}
+
+.choice {
+    margin: 13px auto 5px auto;
+    font-family: Permanent Marker;
+    font-weight: 100;
+}
+
+.container-background {
+    display: block;
+    margin-top: 100px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    grid-gap: 1px 1px;
+    height: 500px;
+    width: 500px;
+    border: 3px solid #768a8f;
+    margin: 2px auto 0 auto;
+    padding: 0px;
+    background-color: #b2dee98a;
+}
+
+.container:hover > div{
+    background-color: rgb(230,230,230);
+}
+
