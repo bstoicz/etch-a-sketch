@@ -1,37 +1,39 @@
-## Welcome to GitHub Pages
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <title>Etch-A-Sketch</title>
+</head>
+<body id="body">
+    <div class="top-bar">
+        <div class="etch">Etch-A-Sketch</div>
+    </div>
+    <div class="form-background">
+        <div class="range">
+            <label for="grid">Grid Size:</label>
+            <input type="range" id="grid-size" name="grid-size" min="1" max="100">
+            <div id="grid-count"></div>
+        </div>
+        <div class="new">
+            <button id="new-btn">NEW</button>
+        </div>
+        <div class = "choice">
+                <input type="radio" id="black" name="color-type" value="black" checked="checked">
+                <label for="black">Black</label><br>
+                <input type="radio" id="random" name="color-type" value="random">
+                <label for="random">Random</label><br>
+                <input type="radio" id="darken" name="color-type" value="darken">
+                <label for="darken">Darken</label><br>
 
-You can use the [editor on GitHub](https://github.com/bstoicz/etch-a-sketch/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+        </div>
+    </div>
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/bstoicz/etch-a-sketch/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+    <div class = "container-background" id="container-background">
+        <div class="container" id="container"></div>
+    </div>
+    <script src="script.js"></script>   
+</body>
+</html>
